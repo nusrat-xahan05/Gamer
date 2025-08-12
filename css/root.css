@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-text: "Work Sans", serif;
+
+    --shadow: #000000;
+    --highlight-color1: #F948B2;
+    --highlight-color2: #8758F1;
+    --highlighted-background-color: rgba(11, 2, 35, 0.1);
+
+    --featured-background1: rgba(167, 33, 98, 0.15);
+    --featured-background2: rgba(5, 151, 160, 0.15);
+    --featured-background3: rgba(71, 125, 17, 0.15);
+
+    --primary-text-color: #0B0223;
+    --secondary-text-color: rgba(39, 39, 39, 0.6);
+    --tartiary-text-color: rgba(255, 255, 255, 0.9);
+    --fourth-text-color: rgba(255, 255, 255, 1);
+    --vector-text-color: rgba(39, 39, 39, 0.8);
+    --copyright-text-color: rgba(255, 255, 255, 0.4);
+}
