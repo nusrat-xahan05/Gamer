@@ -45,6 +45,21 @@ body {
     line-height: 16px;
 }
 
+.logo_part {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo_part p {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.logo_part span {
+    color: var(--highlight-color1);
+}
+
 .banner_btn button {
     font-weight: 700;
     font-size: 20px;
@@ -72,6 +87,16 @@ body {
     border: 2px solid var(--highlight-color1);
 }
 
+.section_heading h3{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.section_heading p{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 24px 0px 27px;
+}
 /* ================================================
              'COMMON CSS' PART END
 ================================================= */
@@ -90,17 +115,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#navbar .nav_main .logo_part {
-    display: flex;
-    font-weight: 700;
-    font-size: 45px;
-    gap: 10px;
-}
-
-#navbar .nav_main .logo_part span {
-    color: var(--highlight-color1);
 }
 
 #navbar .nav_main .nav_items {
@@ -257,7 +271,7 @@ body {
 ================================================ */
 #second_banner {
     padding: 95px 0px;
-    background-color: #FF42A508;
+    background-color: var(--secondary-banner);
 }
 
 #second_banner .second_banner_main {
@@ -277,8 +291,6 @@ body {
 }
 
 #second_banner .second_banner_main .text_part h3 {
-    font-weight: 700;
-    font-size: 48px;
     background-image: linear-gradient(var(--highlight-color1), var(--highlight-color2));
     background-clip: text;
     color: transparent;
@@ -286,8 +298,6 @@ body {
 
 #second_banner .second_banner_main .text_part p {
     margin: 24px 0px 32px;
-    font-weight: 400;
-    font-size: 18px;
 }
 
 #second_banner .second_banner_main .text_part .banner_btn {
@@ -303,7 +313,110 @@ body {
     font-weight: 700;
     font-size: 32px;
 }
-
 /* ================================================
                 SECOND BANNER PART END  
+================================================ */
+
+
+
+/* ================================================
+                CAREERS PART START  
+================================================ */
+#career{
+    background-color: var(--highlight-color1);
+}
+
+#career .career_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+#career .career_main .text_part{
+    padding: 120px 0px;
+    color: var(--primary-banner);
+}
+
+#career .career_main .text_part .career_items_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#career .career_main .text_part .career_items_row p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#career .career_main .text_part .career_items_row .career_items_col2{
+    text-align: right;
+}
+
+#career .career_main .text_part .banner_btn button{
+    text-transform: uppercase;
+    color: var(--highlight-color1);
+    background-color: var(--primary-banner);
+    margin-top: 40px;
+}
+
+#career .career_main .img_part img{
+    width: 100%;
+}
+/* ================================================
+                CAREERS PART END  
+================================================ */
+
+
+
+/* ================================================
+                FOOTER PART START  
+================================================ */
+#footer{
+    text-align: center;
+    padding: 120px 0px;
+    background-color: var(--footer-background);
+}
+
+#footer .footer_main .logo_part p{
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--footer-primary);
+}
+
+#footer .footer_main .footer_menu{
+    margin: 30px 0px 40px;
+}
+
+#footer .footer_main .footer_menu a{
+    margin: 10px 30px 0px;
+    color: var(--footer-primary);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#footer .footer_main .footer_link i{
+    color: var(--footer-primary);
+    font-size: 25px;
+    margin: 0px 20px;
+}
+
+#footer .footer_main .footer_terms{
+    margin: 30px 0px 20px;
+}
+
+#footer .footer_main .footer_terms a{
+    color: var(--footer-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 30px;
+}
+
+#footer .footer_main p{
+    color: var(--footer-secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ================================================
+                FOOTER PART END  
 ================================================ */

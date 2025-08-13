@@ -13,6 +13,10 @@
         display: none;
     }
 
+    #banner {
+        background-position: bottom left;
+    }
+
     #banner .banner_main {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
@@ -26,9 +30,32 @@
         order: 1;
     }
 
+    #second_banner {
+        padding: 20px 0px 60px;
+    }
+
     #second_banner .second_banner_main {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+    }
+
+    #career .career_main {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    #career .career_main .text_part {
+        padding: 50px 0px 120px;
+        order: 2;
+    }
+
+    #career .career_main .img_part {
+        order: 1;
+    }
+
+    #career .career_main .img_part img {
+        width: 80%;
     }
 }
 
@@ -43,7 +70,15 @@
 }
 
 @media screen and (max-width: 480px) {
-    #navbar .nav_main .logo_part {
+    .section_heading h3 {
+        font-size: 38px;
+    }
+
+    .section_heading p {
+        font-size: 17px;
+    }
+
+    .logo_part {
         font-size: 35px;
     }
 
@@ -67,18 +102,6 @@
         padding: 15px 28px;
     }
 
-    #second_banner {
-        padding: 65px 0px;
-    }
-
-    #second_banner .second_banner_main .text_part h3 {
-        font-size: 38px;
-    }
-
-    #second_banner .second_banner_main .text_part p {
-        font-size: 17px;
-    }
-
     #second_banner .second_banner_main .text_part span {
         font-size: 22px;
     }
@@ -87,4 +110,33 @@
         font-size: 26px;
     }
 
+    #career .career_main .text_part .career_items_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #career .career_main .text_part .career_items_row p {
+        font-size: 17px;
+    }
+
+    #career .career_main .img_part img {
+        width: 100%;
+    }
+
+    #footer .footer_main .footer_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer .footer_main .footer_link {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 22px 0px;
+    }
+
+    #footer .footer_main .footer_terms {
+        display: flex;
+        flex-direction: column;
+    }
 }
