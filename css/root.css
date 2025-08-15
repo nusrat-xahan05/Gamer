@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --primary-text: "Work Sans", serif;
+    --primary-font: "Work Sans", serif;
 
     --primary-banner: #ffffff;
     --secondary-banner: #FF42A508;
@@ -10,8 +10,8 @@
     --highlighted-background-color: rgba(11, 2, 35, 0.1);
     --shadow: #000000;
 
-    --primary-text-color: #0B0223;
-    --secondary-text-color: rgba(39, 39, 39, 0.6);
+    --primary-text: #0B0223;
+    --secondary-text: #534C64;
 
     --footer-background: #0B0223;
     --footer-primary: white;

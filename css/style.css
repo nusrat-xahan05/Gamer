@@ -23,7 +23,7 @@ img {
 }
 
 body {
-    font-family: var(--primary-text);
+    font-family: var(--primary-font);
     max-width: 1536px;
     margin: 0 auto;
 }
@@ -96,6 +96,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     margin: 24px 0px 27px;
+    color: var(--secondary-text);
 }
 /* ================================================
              'COMMON CSS' PART END
@@ -125,7 +126,7 @@ body {
 #navbar .nav_main .nav_items ul li a {
     font-weight: 500;
     font-size: 18px;
-    color: var(--primary-text-color);
+    color: var(--primary-text);
     margin-right: 30px;
     position: relative;
     transition: .4s;
@@ -159,7 +160,7 @@ body {
 #navbar .nav_main .nav_hambergur i {
     padding: 10px;
     font-size: 20px;
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid var(--primary-text);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -205,7 +206,7 @@ body {
 #banner .banner_main .text_part h3 {
     font-weight: 600;
     font-size: 48px;
-    color: var(--primary-text-color);
+    color: var(--primary-text);
 }
 
 #banner .banner_main .text_part .main_title {
@@ -320,6 +321,187 @@ body {
 
 
 /* ================================================
+                GAME ITEMS PART START  
+================================================ */
+#online_games{
+    text-align: center;
+    margin: 120px 0px 48px;
+}
+
+#online_games .games_items_main .section_heading h3 span{
+    background-image: linear-gradient(var(--highlight-color1), var(--highlight-color2));
+    background-clip: text;
+    color: transparent;
+}
+
+#online_games .games_items_main .section_heading p{
+    padding-bottom: 20px;
+}
+
+#online_games .games_items_main .games_items_body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+#online_games .games_items_main .games_items_body .games_items p{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondary-text);
+    margin-top: 24px;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img{
+    position: relative;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img img{
+    width: 100%;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img .game_items_img_overlay{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    opacity: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img .game_items_img_overlay i{
+    color: white;
+    font-size: 30px;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img .game_items_img_overlay p{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--highlight-color1);
+    margin-top: 10px;
+}
+
+#online_games .games_items_main .games_items_body .games_items .game_items_img:hover .game_items_img_overlay{
+    width: 100%;
+    opacity: 1;
+}
+/* ================================================
+                GAME ITEMS PART END  
+================================================ */
+
+
+
+/* ================================================
+             PLAY INSTANTLY PART START  
+================================================ */
+#play_instantly{
+    margin: 120px 80px;
+}
+
+#play_instantly .instantly_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#play_instantly .instantly_main .section_heading h3 span{
+    color: var(--highlight-color1);
+}
+
+#play_instantly .instantly_main .img_part{
+    text-align: right;
+    position: relative;
+}
+
+#play_instantly .instantly_main .img_part img{
+    width: 80%;
+}
+
+#play_instantly .instantly_main .img_part .position_img{
+    width: 230px;
+    position: absolute;
+    bottom: -13%;
+    left: 3%;
+}
+
+#play_instantly .instantly_main .img_part .position_img img{
+    width: 100%;
+}
+/* ================================================
+             PLAY INSTANTLY PART END  
+================================================ */
+
+
+
+/* ================================================
+                PLAY ONLINE PART START  
+================================================ */
+#play_online{
+    margin: 120px 80px;
+}
+
+#play_online .online_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#play_online .online_main .img_part{
+    text-align: left;
+    position: relative;
+}
+
+#play_online .online_main .img_part img{
+    width: 80%;
+}
+
+#play_online .online_main .img_part .position_img{
+    width: 230px;
+    position: absolute;
+    bottom: -18%;
+    right: 3%;
+}
+
+#play_online .online_main .img_part .position_img img{
+    width: 100%;
+}
+
+#play_online .online_main .section_heading h3 span{
+    background-image: linear-gradient(var(--highlight-color1) 40%, var(--highlight-color2));
+    background-clip: text;
+    color: transparent;
+}
+/* ================================================
+                PLAY ONLINE PART END  
+================================================ */
+
+
+
+/* ================================================
                 CAREERS PART START  
 ================================================ */
 #career{
@@ -335,6 +517,10 @@ body {
 
 #career .career_main .text_part{
     padding: 120px 0px;
+    color: var(--primary-banner);
+}
+
+#career .career_main .text_part .section_heading p{
     color: var(--primary-banner);
 }
 
