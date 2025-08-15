@@ -194,6 +194,10 @@
         width: 70%;
     }
 
+    #online_games .games_items_main .games_items_body .games_items .game_items_img:hover .game_items_img_overlay {
+        width: 70%;
+    }
+
     #play_online .online_main .img_part .position_img {
         width: 170px;
     }
@@ -209,6 +213,10 @@
 
     #career .career_main .img_part img {
         width: 100%;
+    }
+
+    #buttons .buttons_main .buttons_item p {
+        font-size: 17px;
     }
 
     #footer .footer_main .footer_menu {

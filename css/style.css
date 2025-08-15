@@ -556,6 +556,61 @@ body {
 
 
 /* ================================================
+                BUTTONS ITEMS PART START  
+================================================ */
+#buttons{
+    margin: 100px 0px;
+}
+#buttons .buttons_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#buttons .buttons_main .buttons_item{
+    margin: 10px 0px;
+    padding: 4px 18px 4px 4px;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#buttons .buttons_main .buttons_item p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0B0223;
+    margin-left: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#buttons .buttons_main .buttons_item:hover{
+    border: 2px solid var(--highlight-color1);
+}
+
+#buttons .buttons_main .buttons_item:hover p{
+    color: var(--highlight-color1);
+}
+/* ================================================
+                BUTTONS ITEMS PART END  
+================================================ */
+
+
+
+/* ================================================
                 FOOTER PART START  
 ================================================ */
 #footer{
